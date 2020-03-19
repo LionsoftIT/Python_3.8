@@ -25,12 +25,13 @@ tempo_chiamata = float(input("Inserisci la durata della chiamata in secondi: "))
 if tempo_chiamata != 0:
   if tempo_chiamata > SOGLIA: 
    costo_chiamata = COSTO_RISP + COSTO_SEC * SOGLIA + (tempo_chiamata - SOGLIA) * OLTRE_SOGLIA
-   print("Il costo della chiamata equivale a: ", costo_chiamata, "euro")
+   #print("Il costo della chiamata equivale a: ", costo_chiamata, "euro")
   else:
    costo_chiamata = COSTO_RISP + COSTO_SEC * tempo_chiamata
-   print("Il costo della chiamata equivale a: ", costo_chiamata, "euro")
+   #print("Il costo della chiamata equivale a: ", costo_chiamata, "euro")
 else: 
   costo_chiamata = 0.0
-  print("il costo della chiamata è uguale a: ", costo_chiamata, "€")
+  #print("Il costo della chiamata uguale a: ", costo_chiamata, "euro")
    
+print("Il costo della chiamata equivale a: ", costo_chiamata, "euro")
 print("Grazie e arrivederci")
